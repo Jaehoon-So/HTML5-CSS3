@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소스 코드 표시하기</title>
+</head>
+<body>
+    <h3>로컬 스토리지(Local Storage)를 저장하는 함수 : </h3>
+    <pre>function savetheLocal(){
+        var second = document.getElementById("second");
+        var thevalue = second.value;
+        localStorage.setItem(1, thevalue);
+        gettheLocal();    
+    }</pre>
+    <strong>strong 으로 굵게 강조할 텍스트<br></strong>
+    <b>b 태그를 사용해 굵게 표시할 텍스트<br></b>
+    <p><mark>ㅋㅋㅋㅋㅋ</mark>별 차이 없어보이는 두 기능을 구별해서 사용하는 이유는<br>
+    화면 낭독기의 기능 때문이다. 경고나 주의사항 처럼 중요한<br>
+    내용이여서 강조해야 할 때는 strong태그를 사용하고, <br>
+    문서의 키워드처럼 단순히 굵게 표시할 때는 b태그를 사용한다.</p>
+    <em>em태그를 사용해 표시한 텍스트<br></em>
+    <i>이탤릭체로 표시할 텍스트</i>
+
+</body>
+</html>
