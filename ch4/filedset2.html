@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fieldset 1분복습</title>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <form action="register.php">
+        <fieldset>
+            <legend>필수 정보</legend>
+            <label for="name">이름 : </label>
+            <input type="text" id="name" autocomplete="off" size="15" value="이름을 입력하세요.">
+        </fieldset>
+        <fieldset>
+            <legend>선택 정보</legend>
+            <label for="birth">생일 : </label>
+            <input type="date" id="birth" width="200" height="1000">
+        </fieldset>
+        <input type="submit">
+        <input type="reset">
+    </form>
+    
+    
+
+</body>
+</html>

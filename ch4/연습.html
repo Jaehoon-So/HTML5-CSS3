@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4단원 연습</title>
+    <style>
+        ul li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="register.php">
+        <fieldset>
+            <legend><b>수강 과목을 선택하세요</b></legend>
+            <label for="class">관심분야</label>
+            <input type="text" id="class" list="datalist">
+            <datalist id="datalist">
+                <option value="grammer" label="문법"></option>
+                <option value="voca" label="어휘"></option>
+                <option value="speaking" label="회화"></option>
+                <option value="listening" label="리스닝"></option>
+                <option value="news" label="뉴스청취"></option>
+            </datalist>
+        </fieldset>
+    </form>
+    <hr>
+    <form>
+        <fieldset>
+            <legend><b>불만사항</b></legend>
+            <textarea name="public" id="" cols="40" rows="5"></textarea>
+        </fieldset>
+    </form>
+    <hr>
+    <form action="register2.php">
+        <ul>
+            <li>
+                <p>button 명령어로 삽입한 submit버튼</p>
+                <button type="submit">전송하기</button>
+            </li>
+            <li>
+                <p>input 명령어로 삽입한 submit버튼</p>
+                <input type="submit" value="전송하기">
+            </li>
+            <li>
+                <p>이미지를 이용한 버튼 만들기</p>
+                <button type="submit"><img src="images/tick.png">전송하기</button><br>
+                <button type="submit"><img src="images/login.jpg"></button>
+            </li>
+        </ul>
+        <hr>
+    </form>
+    <p><b>덧셈 계산기</b></p>
+    <form oninput="result.value=parseInt(num1.value)+parseInt(num2.value)">
+        <input type="number" name=num1 value="0">
+        +<input type="number" name=num2 value="0">
+        =<output name="result" for="num"></output>
+    </form>
+    <hr>
+    <h4>Progress 태그 연습하기</h4>
+    <form>
+        <ul>
+            <li>
+                <label>10초 남음</label>
+                <!-- 전체 60초 중 50초 진행 -->
+                <progress value="50" max="60"></progress>
+            </li>
+            <li>
+                <label>진행률 30%</label>
+                <progress value = "30" max = "100"></progress>
+            </li>
+        </ul>
+    </form>
+    <hr>
+    <form>
+        <ul>
+            <li>
+                <label for="deter">점유율 0.8</label>
+                <meter value="0.8" max="1.0" id="deter"></meter>
+            </li>
+            <li>
+                <label for="usage">사용량 64%</label>
+                <meter value="64" max="100" id="usage" high="70" low="30" optimum="50"></meter>
+            </li>
+            <li>
+                <label for="traffic">트래픽 초과</label>
+                <meter min="1024" max="10240" low="2048" high="8192" value="9216" id="traffic"></meter>
+            </li>
+            <li>
+                <label for="optimalTraffic">적절한 트래픽</label>
+                <meter value="0.5" optimum="0.8" id="optimalTraffic"></meter>
+            </li>
+        </ul>
+    </form>
+    <hr>
+    <p>Q1: </p>
+    <form>
+        <h1>예약 정보</h1>
+        <ul>
+            <li>
+                <label for="uname">이 름 </label>
+                <input type="text" id="name">
+            </li>
+            <li>
+                <label for="tel1">휴대폰</label>
+                <input type="tel" id="tel1">
+            </li>
+            <li>
+                <label for="email1">이메일</label>
+                <input type="email" id="email1">
+            </li>
+            <li>
+                <input type="submit" id="rsv" value="예약하기">
+            </li>
+        </ul>
+    </form>
+    <p>Q2: </p>
+    <h1>프런트엔드 개발자 지원서</h1>
+    <p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p><hr>
+    <form>
+        <legend><b>개인정보</b></legend>
+        <ul>
+            <li>
+                <label for="inform">이름</label>
+                <input type="text" placeholder="공백없이 입력하세요" id="inform">
+            </li>
+            <li>
+                <label for="tel1">연락처</label>
+                <input type="tel"  id="tel1">    
+            </li>
+        </ul>
+        <legend><b>지원 분야</b></legend>
+        <ul>
+            <li>
+                <label><input type="radio" name="apply" value="webPublishing"> 웹 퍼블리싱</label>
+            </li>
+            <li>
+                <label><input type="radio" name="apply" value="webApp"> 웹 어플리케이션 개발</label>
+            </li>
+            <li>
+                <label><input type="radio" name="apply" value="enviroment"> 개발환경 개선</label>
+            </li>
+        </ul>
+        <legend><b>지원 동기</b></legend>
+        <textarea cols="60" rows="5" placeholder="본사 지원동기를 간략히 써주세요"></textarea>
+        <br>
+        <button type="submit">접수하기</button>
+        <button type="reset">다시 쓰기</button>
+    </form>
+
+
+    
+</body>
+</html>

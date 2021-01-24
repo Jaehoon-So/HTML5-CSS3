@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>드롭다운 목록 만들기</title>
+</head>
+<body>
+    <h1>여름방학 특강 신청</h1>
+    <form>
+        <fieldset>
+            <legend><b>수강 신청인</b></legend>
+            <ul>
+                <li>
+                    <label for="uname">학번</label>
+                    <input type="text" id="uname">
+                </li>
+                <li>
+                    <label for="name">이름</label>
+                    <input type="text" id="name">
+                </li>
+                <li>
+                    <lable for="classes">학과</lable>
+                    <select size="5" id="classes" multiple>
+                        <optgroup label="공과대학">
+                            <option value="archi">건축공학과</option>
+                            <option value="machine">기계공학과</option>
+                            <option value="indust">산업공학과</option>
+                            <option value="elec">전기전자학과</option>
+                            <option value="computer" selected>컴퓨터공학과</option>
+                        </optgroup>
+                        <optgroup label="인문학부">
+                            <option value="history">사학과</option>
+                            <option value="lang">어문학부</option>
+                            <option value="philo">철학과</option>
+                        </optgroup>
+                        
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
